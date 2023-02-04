@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
+#include <memory.h>
 using namespace std;
 const int N=100100;
 int n,a[N];
