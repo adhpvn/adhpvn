@@ -13,8 +13,8 @@ if (operation == "insert") {
 cin >> x;
 q.push(x);
 } else if (operation == "delete-max") {
-cout << q.top() << endl;
 q.pop();
+cout << q.top() << endl;
 }
 }
 return 0;
