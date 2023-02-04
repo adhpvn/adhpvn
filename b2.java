@@ -14,5 +14,13 @@ stdin                       stdout
 10                          10
 8 5 7 9 10 4 7 2 2 6        10
 insert 3                    9
-delete-Max                  8
+delete-max                  8
 insert 6                    8
+insert 10
+insert 7
+insert 8
+delete-max
+delete-max
+delete-max
+delete-max
+*
