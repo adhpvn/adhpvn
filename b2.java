@@ -9,3 +9,10 @@ Cho một tập gồm các số nguyên a1, a2,..an. Thực hiện trên tập s
 - các dòng tiếp theo, mỗi dòng chứa 1 thao tác với định dạng như đã đề cập ở trên, đầu vào input kết thúc bởi 1 dòng chứa duy nhất ký tự *
 // output:
 đưa ra giá trị trả về của mỗi thao tác delete-max có trong đầu vào input
+
+stdin                       stdout
+10                          10
+8 5 7 9 10 4 7 2 2 6        10
+insert 3                    9
+delete-Max                  8
+insert 6                    8
