@@ -1,1 +1,0 @@
-b1 chạy cái nào cũng compile lỗi, b2 thì chạy sai đáp án
