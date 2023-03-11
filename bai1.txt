@@ -1,0 +1,20 @@
+cho một dữ liệu về công dân:
+input 2 phần: phần thứ nhất chứa cơ sở dữ liệu về công dân và phần thứ 2 chứa các câu truy vấn.
+Hai phần này được phân cách bởi một dòng chứa 1 ký tự * .
+1, phần thứ nhất: gồm một số dòng (số dòng có thể lên tới 100000) chứa thông tin
+của 1 công dân với định dạng:
+<code> <date_of_birth> <father_code> <mother_code> <is_alive> <region_code>
+trong đó:
+. <code>: mã căn cước là xâu kí tự có độ dài 7
+. <date_of_birth>: ngày sinh có định dạng YYYY-MM-DD ( 1980-02-23)
+. <father_code> và <mother_code> tương ứng là mã căn cước của bố và mẹ, do đó cũng là các xâu độ dài 7. Nếu <father_code> hay <mother_code> đang để 0000000, thì có nghĩa là trong cơ sở dữ liệu chưa có 
+thông tin tương ứng của bố mẹ của công dân này.
+. <is_alive>: 1 kí tự. 'Y' nếu công dân sống, 'N' nếu chết
+. <region_code> mã khu vực công dân đang sống.
+2. phần thứ 2: chứa các dòng (số dòng có thể lên tới 100000), mỗi dòng chứa 1 loại truy vấn:
+. NUMBER_PEOPLE: trả về số lượng công dân có trong cơ sở dữ liệu( số dòng có trong cơ sở dữ liệu)
+. NUMBER_PEOPLE_BORN_AT <date> trả về số lượng công dân có ngày sinh là <date>
+. MOST_ALIVE_ANCESTOR <code> tìm tổ tiên xa nhất ( về khoảng cách thế hệ) có trong cơ sở dữ liệu có mã công dân là <code>. Trả về khoảng cách thế hệ giữa tổ tiên được tìm thấy và công dân này.
+VD: bố mẹ và con: 1. ông bà và cháu: 2
+. NUMBER_PEOPLE_BORN_BETWEEN <from_date> <to_date>: trả về số lượng công dân có ngày sinh trong khoảng ...
+. 
