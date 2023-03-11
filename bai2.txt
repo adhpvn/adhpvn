@@ -1,4 +1,4 @@
-2. Cây Steiner: ( chưa xong)
+2. Cây Steiner: 
 
 Một mạng truyền thông G bao gồm N máy chủ 1,2,...,N được kết nối với nhau bởi M đường truyền (2 chiều).
 giữa 2 máy chủ i và j có thể có đường truyền hoặc không có. Trong TH giữa 2 máy chủ j và j có đường truyền thì c(i,j) 
@@ -7,3 +7,31 @@ Một công ty cần tính toán phương án thuê 1 số đường truyền n�
 trong tập R ( R là tập con của {1,2,...,N}). Hãy tính toán phương án thuê đường truyền với tổng chi phí thuê là ít nhất.
 
 INPUT
+. dòng 1: ghi 2 số nguyên dương N và M (1=<N,M=<30)
+. dòng 2 đến ML mỗi dòng ghi 3 số nguyên dương i,j,w: có đường truyền giữa i và j với chi phí thuê là w(w = c(i,j))
+. dòng M+2: ghi số nguyên dương K
+. dòng M+3: ghi K số nguyên dương đôi một khác nhau là chỉ số của các máy chủ trong R
+
+OUTPUT
+
+Ghi ra tổng chi phí thuê nhỏ nhất tìm được
+
+VD:
+INPUT 
+5 8
+1 2 1
+1 3 2 
+1 5 5
+2 4 7
+2 5 6
+3 4 30
+3 5 4 
+4 5 8
+4 
+1 2 3 4
+
+OUTPUT 
+10
+
+giải thích:
+ta thực hiện thuê 3 đường truyền (1,2),(1,3) và (2,4) với tổng chi phí thuê là 1+2+7=10
