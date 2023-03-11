@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define N 30
 
 const int N = 30;
 const int INF = 1e9;
