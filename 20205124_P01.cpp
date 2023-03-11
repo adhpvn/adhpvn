@@ -70,7 +70,7 @@ int main() {
     getline(cin, line); // skip the first line
     while (getline(cin, line)) {
         if (line == "*") {
-            break
+            break;
     }
     else {
         string query_type;
