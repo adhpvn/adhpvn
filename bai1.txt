@@ -16,5 +16,9 @@ thông tin tương ứng của bố mẹ của công dân này.
 . NUMBER_PEOPLE_BORN_AT <date> trả về số lượng công dân có ngày sinh là <date>
 . MOST_ALIVE_ANCESTOR <code> tìm tổ tiên xa nhất ( về khoảng cách thế hệ) có trong cơ sở dữ liệu có mã công dân là <code>. Trả về khoảng cách thế hệ giữa tổ tiên được tìm thấy và công dân này.
 VD: bố mẹ và con: 1. ông bà và cháu: 2
-. NUMBER_PEOPLE_BORN_BETWEEN <from_date> <to_date>: trả về số lượng công dân có ngày sinh trong khoảng ...
-. 
+. NUMBER_PEOPLE_BORN_BETWEEN <from_date> <to_date>: trả về số lượng công dân có ngày sinh trong khoảng từ ngày <from_date> đến ngày <to_date>
+. MAX_UNRELATED_PEOPLE: Tìm một tập các công dân lấy trong cơ sở dữ liệu sao cho không có ai trong tập này có quan hệ
+cha/mẹ - con và số lượng công dân trong tập này là lớn nhất. Trả về số lượng công dân có trong tập tìm được (số công dân
+trong dữ liệu input không vượt quá 20 đối với lượng truy vấn loại này)
+
+Phần thứ 2 kết thúc bởi một dòng chứa ***.
