@@ -1,0 +1,9 @@
+2. Cây Steiner: ( chưa xong)
+
+Một mạng truyền thông G bao gồm N máy chủ 1,2,...,N được kết nối với nhau bởi M đường truyền (2 chiều).
+giữa 2 máy chủ i và j có thể có đường truyền hoặc không có. Trong TH giữa 2 máy chủ j và j có đường truyền thì c(i,j) 
+là chi phí thuê đường truyền này.
+Một công ty cần tính toán phương án thuê 1 số đường truyền nào đó của mạng G để kết nối liên thông một số máy chủ
+trong tập R ( R là tập con của {1,2,...,N}). Hãy tính toán phương án thuê đường truyền với tổng chi phí thuê là ít nhất.
+
+INPUT
