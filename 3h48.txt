@@ -1,3 +1,5 @@
 - ghi de bai 1 trong bai1.txt day, doc duoc thi cf vao day :(
 
 oke
+
+- chạy thử chưa đấy, sao t ấn run bị lỗi??
