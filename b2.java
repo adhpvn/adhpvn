@@ -27,45 +27,55 @@ public class SteinerTree {
                     u = j;
                 }
             }
-            visited[u] = true; // Cập nhật khoảng cách đến các đỉnh chưa xét
-            for (int j = 0; j < n; j++) {
-                if (!visited[j] && graph[u][j] != INF && graph[u][j] < dist[j]) {
-                    dist[j] = graph[u][j];
-                    parent[j] = u;
+            visited[u] = true;
+
+            for (int v = 0; v < n; v++) {
+                if (graph[u][v] != 0 && !visited[v] && graph[u][v] < dist[v]) {
+                    dist[v] = graph[u][v];
+                    parent[v] = u;
                 }
             }
         }
 
-        int sum = 0;
-        for (int v : R) {
-            if (parent[v] != -1) {
-                sum += dist[v];
+        int totalCost = 0;
+        for (int i : R) {
+            int u = i;
+            while (u != -1) {
+                int v = parent[u];
+                if (v != -1) {
+                    totalCost += graph[u][v];
+                }
+                u = v;
             }
         }
-        return sum;
+
+        return totalCost;
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+
+        // Khởi tạo ma trận kề
         graph = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            Arrays.fill(graph[i], INF);
-        }
         for (int i = 0; i < m; i++) {
-            int u = sc.nextInt() - 1;
-            int v = sc.nextInt() - 1;
-            int w = sc.nextInt();
+            int u = scanner.nextInt() - 1;
+            int v = scanner.nextInt() - 1;
+            int w = scanner.nextInt();
             graph[u][v] = w;
             graph[v][u] = w;
         }
-        int k = sc.nextInt();
+
+        int k = scanner.nextInt();
+
+        // Khởi tạo tập R
         R = new HashSet<>();
         for (int i = 0; i < k; i++) {
-            int v = sc.nextInt() - 1;
-            R.add(v);
+            R.add(scanner.nextInt() - 1);
         }
-        int ans = prim();
-        System.out.println(ans);
+
+        int minCost = prim();
+        System.out.println(minCost);
     }
+}
