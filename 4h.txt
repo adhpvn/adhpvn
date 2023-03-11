@@ -1,7 +1,0 @@
-- ghi de bai 1 trong bai1.txt day, doc duoc thi cf vao day :(
-
-oke
-
-- chạy thử chưa đấy, sao t ấn run bị lỗi??
-thế xem thử b1 c2 mới đi
-b2 nữa
